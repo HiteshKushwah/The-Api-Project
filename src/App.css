@@ -1,0 +1,223 @@
+/* Reset default browser styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: Arial;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: 350px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 100px;
+
+}
+
+.box {
+  max-width: 600px;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-align: center;
+  background-color: darksalmon;
+  box-shadow: 5px 5px 40px 5px;
+  margin-top: 55px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 2px solid #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.success {
+  color: green;
+  margin-top: 5px;
+}
+
+.resend-btn {
+  background-color: #28a745;
+  margin-top: 10px;
+}
+
+.password-toggle {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: lightblue;
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.next-btn,
+.prev-btn,
+.details-btn,
+.back-btn,
+.edit-btn,
+.save-btn,
+.cancel-btn,
+.add-user-btn {
+  margin: 0 5px;
+}
+
+.next-btn:disabled,
+.prev-btn:disabled,
+.save-btn:disabled,
+.cancel-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.details-btn {
+  background-color: green;
+}
+
+.back-btn {
+  margin-top: 15px;
+  background-color: orange;
+}
+
+.edit-btn {
+  background-color: purple;
+}
+
+.save-btn {
+  background-color: green;
+}
+
+.cancel-btn {
+  background-color: red;
+}
+
+.user-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.user-details-table th,
+.user-details-table td {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-details-table th {
+  background-color: lightgray;
+  width: 30%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.add-user-btn {
+  background-color: teal;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
